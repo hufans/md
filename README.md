@@ -15,4 +15,4 @@ __2018年6月5日__
 >如何将nodejs 的异步变成同步
 >module.export = cc , 默认构造函数
 >export = func ,默认本身
->如果不指定文件夹，那么指定从 nodemodule文件夹
+>如果不指定文件夹，那么指定从 nodemodule文件夹带后缀名为文件，否则是文件夹（下的index.js文件）
