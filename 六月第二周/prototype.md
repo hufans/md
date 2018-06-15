@@ -34,5 +34,17 @@ apply 、 call 、bind 三者都是用来改变函数的this对象的指向的�
 apply 、 call 、bind 三者第一个参数都是this要指向的对象，也就是想指定的上下文；
 apply 、 call 、bind 三者都可以利用后续参数传参；
 bind 是返回对应函数，便于稍后调用；apply 、call 则是立即调用 。
+
+this的指向在函数定义的时候是确定不了的，只有函数执行的时候才能确定this到底指向谁，实际上this的最终指向的是那个调用它的对象
+
+如果返回值是一个对象，那么this指向的就是那个返回的对象，如果返回值不是一个对象那么this还是指向函数的实例。
  
+function fn(){
+    this.num = 1;
+}
+var a = new fn();
+console.log(a.num); //1
+
+
+ 为什么this会指向a？首先new关键字会创建一个空的对象，然后会自动调用一个函数apply方法，将this指向这个空对象，这样的话函数内部的this就会被这个空的对象替代。
 
