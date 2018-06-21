@@ -1,0 +1,13 @@
+{
+    "product_id":"324", //主键
+    "product_associate_id":[id,id,id], //关联 其他药
+    "product_name":"三七", // 商品名
+    "product_discrption":"", //描述
+    "product_inventory_place":["成都","南江"],
+
+    "product_price":"", //当前价格
+    "product_original_price":"", //初始价格
+    "product_inventory_num":num,
+    "product_picture":[http.xxx,http.yyy],
+    "product_appraise":num,//评价
+}
