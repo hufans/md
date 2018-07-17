@@ -48,7 +48,7 @@ fs.readfile(ejs,{a=6})
 >> ejs 主要是通过绑定数据然后 ejs 绑定数据。fs 读取之后然后，注入消息。
 >> jade 也是类似于前者的一个解析工具。
 ---
-__cookies使用 and Session介绍__
+__cookies and Session 介绍__
 ![Alt text](./session.png)
->session 依赖cookies的上传 但是cookies记录是乱码，然后上传之后就拿去和服务端的session（缓存）比较。所以用cookies的乱码来标示 session的key
+>session的工作模式是 依赖cookies 但是cookies记录是乱码，然后上传之后就拿去和服务端的session（缓存）比较。所以用cookies的乱码来标示 session的key
 
